@@ -1,0 +1,273 @@
+
+/* Styles the main heading */           
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 40px 100px;
+}
+
+/* Creates the logo background */
+.logo {
+    background: rgb(0, 110, 255);
+    height: 70px;
+}
+
+/* Resets the default styling for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/* Creates and styles the navbar */
+ul {
+    list-style: none;
+    background: rgb(255, 255, 255);
+    height: 70px;
+}
+
+/* Positions the navbar items next to each other */
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Styles the navbar links */
+ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Customises the website background image */
+body {
+    background-color: rgb(38, 38, 38);
+    background-image: url(images/photo-1580286374075-7279567e29ae.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Customises the logo size, colour and position */
+.logo {
+    width: 277px;
+    height: 70px;
+    background-color: rgb(31, 195, 211);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+}
+
+/* Controls the size of the logo image */
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+/* Customises the navbar layout */
+.navbar ul {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Controls the layout of the navbar items */
+.navbar ul li {
+    display: flex;
+}
+
+/* Styles the navbar text */
+.navbar li a {
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Centers the navbar links vertically */
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+}
+
+/* Creates the underline animation for the navbar */
+.navbar li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: blue;
+    transition: all 0.4s ease;
+}
+
+/* Shows the navbar underline when hovering */
+.navbar li a:hover:before {
+    width: 100%;
+}
+
+/* Customises the paragraphs */
+p {
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Adds a background colour to the paragraph section */
+.paragraph {
+    background: #030c3b;
+}
+
+/* Controls the size and spacing of paragraphs */
+p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Styles the large text */
+.bigtext {
+    display: block;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+/* Customises the footer */
+footer {
+    background-color: #36454F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles the footer links */
+footer a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Positions and styles the footer links */
+footer a {
+    position: relative;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+/* Creates the underline animation for footer links */
+footer a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #030c3b;
+    transition: all 0.4s ease;
+}
+
+/* Shows the footer underline when hovering */
+footer a:hover::before {
+    width: 100%;
+}
+
+/* Styles the main animal heading */
+.animalsBIGTEXT {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: hsl(225, 53%, 31%);
+}
+
+/* Styles the first information section */
+.information1 {
+    background-color: hsl(225, 53%, 31%);
+    font-style: bolder;
+    padding: 20px;
+}
+
+/* Styles the second information section */
+.information2 {
+    background-color: hsl(225, 53%, 31%);
+    font-style: bolder;
+}
+
+/* Styles the help button */
+.help-button {
+    display: inline-block;
+
+    margin-left: 100px;
+    margin-top: 10px;
+
+    padding: 15px 30px;
+
+    background-color: rgb(31, 195, 211);
+    color: white;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    transition: 0.3s ease;
+}
+
+/* Changes the help button when hovering */
+.help-button:hover {
+    background-color: rgb(18, 13, 96);
+    transform: translateY(-3px);
+}
+
+/* Changes the gallery border when hovering */
+.galleryIMAGE:hover {
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+/* Styles the animal heading */
+.animalsBIGTEXT {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: hsl(225, 53%, 31%);
+}
+
+/* Adds a smooth animation to gallery images */
+.galleryIMAGE img {
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Makes gallery images move up and glow when hovering */
+.galleryIMAGE img:hover {
+    box-shadow: 0 0 2px 4.5px #f7f7f7;
+    transform: translateY(-8px);
+}
+
+/* Styles the gallery images */
+.galleryIMAGE {
+    border: 1px solid hsl(0, 0%, 60%);
+    display: inline-block;
+    margin: 5px;
+}
+
